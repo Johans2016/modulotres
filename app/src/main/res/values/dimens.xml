@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tamañoNumero">20dp</dimen>
+    <dimen name="anchoIcono">96dp</dimen>
+    <dimen name="esquinasCardV">4dp</dimen>
+    <dimen name="paddingBar">4dp</dimen>
+    <dimen name="margenDeIcono">4dp</dimen>
+    <dimen name="margenBottom">10dp</dimen>
+    <dimen name="margenTop">10dp</dimen>
+    <dimen name="elevacionActionBar">4dp</dimen>
+</resources>

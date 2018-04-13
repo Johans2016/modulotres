@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvMascota"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    cardView:cardCornerRadius="@dimen/esquinasCardV"
+    android:layout_marginBottom="@dimen/margenBottom"
+    android:layout_marginLeft="@dimen/margenBottom"
+    android:layout_marginRight="@dimen/margenTop"
+    android:layout_marginTop="@dimen/margenTop"
+    cardView:cardBackgroundColor="@color/fondoCardview"
+    >
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivmascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loro"
+            android:background="@color/fondoImagen"
+            />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            cardView:layout_constraintGuide_percent="0.80" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ibLike"
+            android:background="@drawable/icons8_enamorado_80"
+            android:layout_marginLeft="@dimen/margenDeIcono"
+            cardView:layout_constraintTop_toBottomOf="@+id/ivmascota"
+            cardView:layout_constraintStart_toStartOf="parent"
+            cardView:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNombre"
+            android:text="@string/tvnombre"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            android:textSize="@dimen/tamañoNumero"
+            cardView:layout_constraintTop_toBottomOf="@id/ivmascota"
+            cardView:layout_constraintLeft_toRightOf="@id/ibLike"
+            cardView:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCantidad"
+            cardView:layout_constraintLeft_toRightOf="@id/guideline"
+            cardView:layout_constraintTop_toBottomOf="@id/ivmascota"
+            cardView:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="@dimen/tamañoNumero"
+            android:textStyle="bold"
+            android:textColor="@color/negro"
+            android:text="@string/tvnumero"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivLikes"
+            android:src="@drawable/icons8_enamorado_96"
+            cardView:layout_constraintBottom_toBottomOf="parent"
+            cardView:layout_constraintLeft_toRightOf="@id/tvCantidad"
+            cardView:layout_constraintTop_toBottomOf="@id/ivmascota"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

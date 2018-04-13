@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MascotasApp</string>
+    <string name="tvnombre">nombre</string>
+    <string name="tvnumero">0</string>
+    <string name="encimaDelBoton">Ultimas mascotas raiteadas</string>
+</resources>
