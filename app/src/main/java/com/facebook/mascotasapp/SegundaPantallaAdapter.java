@@ -56,7 +56,7 @@ public class SegundaPantallaAdapter extends RecyclerView.Adapter<SegundaPantalla
 
     @Override
     public int getItemCount() {
-       return mascotas2.size();
+       return 5;
     }
 
     //public void obtenerLikes(){    }
